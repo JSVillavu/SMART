@@ -1,4 +1,4 @@
-/**
+package smart; /**
  *  Copyright 2006-2013 by Benjamin J. Land (a.k.a. BenLand100)
  *
  *  This file is part of the SMART Minimizing Autoing Resource Thing (SMART)
@@ -16,15 +16,19 @@
  *  You should have received a copy of the GNU General Public License
  *  along with SMART. If not, see <http://www.gnu.org/licenses/>.
  */
- 
-package smart;
 
-import java.awt.Point;
-import java.io.*;
-import java.nio.*;
-import java.nio.channels.*;
-import java.net.*;
+import java.awt.*;
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.lang.reflect.Array;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketTimeoutException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.channels.FileChannel;
 
 /**
  
